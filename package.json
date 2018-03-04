@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start": "",
-    "build": "babel src -d dist"
+    "build": "babel src -d dist",
+    "test": "jest test/* --coverage --runInBand --forceExit"
   },
   "dependencies": {
     "bluebird": "^3.5.1",
@@ -25,5 +26,14 @@
     "eslint-plugin-import": "^2.9.0",
     "faker": "^4.1.0",
     "jest": "^22.4.2"
+  },
+  "jest": {
+    "setupFiles": [
+      "./test/env.js"
+    ],
+    "coverageDirectory": "./coverage",
+    "coverageReporters": [
+      "html"
+    ]
   }
 }
