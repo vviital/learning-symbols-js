@@ -1,0 +1,11 @@
+{
+  "name": "symbols",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "vviital <vviital@tut.by>",
+  "license": "MIT",
+  "scripts": {
+    "start": "",
+    "build": "babel src -d dist"
+  }
+}
